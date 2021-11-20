@@ -2,7 +2,7 @@
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6171887138f8310012c86788&product=inline-share-buttons" async="async"></script>
     
  
-   <div class="xf_inside">
+   <!-- <div class="xf_inside">
      
       <div class="box_text padd-sec">
          <div class="form_sec_post">
@@ -20,7 +20,7 @@
            @include('livewire.post_modals.upload_video')
          </div>
       </div>
-   </div>
+   </div> -->
    @if($list)
    @foreach($list as $r)
    <div class="xf_inside mt-3">
