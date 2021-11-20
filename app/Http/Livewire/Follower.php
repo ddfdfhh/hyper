@@ -15,7 +15,7 @@ class Follower1 extends Component
     public function render()
     {
           $this->following=Follower::where('user_id',auth()->id())->get();
-         $this->users=User::withcCount('followers')->where('status','Active')->get();
+         $this->users=User::withCount('followers')->where('status','Active')->get();
         return view('livewire.followers');
      
     }
