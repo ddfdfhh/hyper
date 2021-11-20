@@ -10,7 +10,7 @@ use App\Models\LikeContentType;
 class SinglePost extends Component
 {
    public  $post;
-  
+   
    public  $offset=0,$limit=5,$comment_txt,$reply_txt,$selected_forum,$showP=false,$page_title='Forums';
    protected $listeners = ['refreshComponent' => '$refresh','commentAdded'=>'$refresh'];
   
