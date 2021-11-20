@@ -80,7 +80,7 @@
                            </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
-                           <div class="tab+-pane fade show active" id="all" role="tabpanel" aria-labelledby="FOLLOWING-tab">
+                           <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="FOLLOWING-tab">
                               <div class="profile_home mt-3">
                                  <div class="row">
                                    
@@ -102,8 +102,8 @@
                                  <div class="row">
                                     
                                     <div class="col-md-12 mt-3">
-                                       <div class="tab-content" id="myTab-nContent">
-                                          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                       <div class="tab-content" id="myTab-nContent2">
+                                          <div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home-tab">
                                          dfd
                                                        @if($my_posts)
                                                        @foreach($my_posts as $r)
