@@ -11,7 +11,7 @@ use App\Models\Post;
 use App\Helpers\Helper;
 use App\Models\Follower;
 use App\Models\News;
-use App\Models\Hpyerzone;
+use App\Models\Hyperzone;
 class DashboardController extends Controller{
     //index
     public function index(Request $request){
