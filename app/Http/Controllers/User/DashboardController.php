@@ -11,11 +11,12 @@ use App\Models\Post;
 use App\Helpers\Helper;
 use App\Models\Follower;
 use App\Models\News;
+use App\Models\Hpyerzone;
 class DashboardController extends Controller{
     //index
     public function index(Request $request){
         
-       $my_posts=Post::with('owner','comments')->withCount('all_comments')->where('user_id',auth()->id())->latest()->get();
+       $my_posts=Hpyerzone::with('owner','comments')->withCount('all_comments')->where('user_id',auth()->id())->latest()->get();
         $following_count1=Follower::where('user_id',auth()->id())->count();
         $followers_count1=Follower::where('following_id',auth()->id())->count();
          $news = News::whereStatus('Active')->orderby('id', 'DESC')->get();

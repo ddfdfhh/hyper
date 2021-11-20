@@ -84,7 +84,7 @@
                               <div class="profile_home mt-3">
                                  <div class="row">
                                    
-                                    <div class="col-md-12 mt-3">
+                                    <!-- <div class="col-md-12 mt-3">
                                        <div class="tab-content" id="myTab-nContent">
                                           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                          
@@ -92,7 +92,7 @@
                                                    
                                           </div>
                                            </div>
-                                    </div>
+                                    </div> -->
                                  </div>
                               </div>
                            </div>
@@ -127,13 +127,13 @@
                                                                                @php
                                                                                    $is_img=false;
                                                                                    $is_vid=false;
-                                                                                     if($r->featured_image && file_exists(storage_path('app/public/post/images/'.$r->featured_image)))
+                                                                                     if($r->featured_image && file_exists(storage_path('app/public/hyperzone/images/'.$r->image1)))
                                                                                       $is_img=true;
-                                                                                     if($r->video && file_exists(storage_path('app/public/post/videos/'.$r->video)))
+                                                                                     if($r->video && file_exists(storage_path('app/public/hyperzone/videos/'.$r->video)))
                                                                                        $is_vid=true;
                                                                                   @endphp
                                                                                    @if($is_img)
-                                                                                      <img src="{{asset('storage/post/images/'.$r->featured_image)}}" style="width:100%;">
+                                                                                      <img src="{{asset('storage/hyperzone/images/'.$r->image1)}}" style="width:100%;">
                                                                                   @endif
                                                                                   @if($is_vid)
                                                                                   <video width="100%" height="100%" controls>
