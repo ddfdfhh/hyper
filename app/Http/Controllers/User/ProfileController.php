@@ -218,7 +218,7 @@ class ProfileController extends Controller{
        }
      public function single_post($id){
         // dd($id);
-          $post=Post::with('owner')->findOrFail($id);
+          $post=Hyperzone::with('owner')->findOrFail($id);
           return view('front.user.single-post',compact('post'));
        }
 }
