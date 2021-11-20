@@ -1,0 +1,136 @@
+.mobile_menu {
+	display: none !important;
+}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (max-width: 1199px) {
+	.bit_details a,
+	.sign_in_up,
+	.sign_in_up a,
+	.mail_info a {
+		font-size: 12px;
+	}
+	img.header_logo_bg {
+		width: 170px;
+	}
+	.header_logo {
+		top: -42px;
+	}
+	img.header_logo_sin {
+		top: -19px;
+		width: 85px;
+	}
+	div#navbarNav ul li a {
+		font-size: 11px;
+		padding: 0px 7px;
+	}
+	a.join_us {
+		padding: 0px 10px;
+	}
+	.slider_cnt {
+		width: 66%;
+	}
+	.marquee__item {
+		width: 22%;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	nav.navbar-expand-lg.desktop_menu {
+		display: none;
+	}
+	ul#main-menu {
+		border-radius: 0px;
+	}
+	ul#main-menu li {
+		width: 100%;
+	}
+	.bit_details {
+		text-align: right;
+	}
+	.header_logo_mobile {
+		width: 100px;
+	}
+	.mobile_menu {
+		display: block !important;
+		padding: 9px 0px;
+	}
+	label.main-menu-btn {
+		color: #000;
+		font-size: 16px;
+		text-indent: revert;
+		overflow: inherit;
+		text-transform: uppercase;
+		font-weight: 600;
+		padding-left: 33px;
+		display: flex;
+		align-items: center;
+		margin: 6px 20px;
+	}
+	ul#main-menu {
+		position: absolute;
+		width: 100%;
+	}
+	.slider_cnt h1 {
+		font-size: 20px;
+	}
+	.carousel-control-next,
+	.carousel-control-prev {
+		width: 45px;
+		height: 45px;
+		padding: 13px;
+		line-height: 31px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.company_logo .owl-nav,
+	.company_logo .owl-dots {
+		display: none;
+	}
+	.mail_info a {
+		justify-content: center;
+	}
+	.bit_details {
+		text-align: center;
+	}
+	.lst_section .col-md-8 p,
+	.meet_team .col-md-8 p,
+	.Hyper_Unity .col-md-8 p,
+	.about_Hyper_Unity .col-md-8 p {
+		padding-left: 0;
+		border-left: 0;
+	}
+	.menu_info_sec {
+		margin: 40px 0px 0px;
+	}
+	.slider_cnt {
+		width: 100%;
+		padding: 20px;
+	}
+	.marquee__item {
+		width: 61%;
+	}
+	.carousel-caption {
+		position: relative;
+		right: 15%;
+		bottom: 0;
+		left: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		color: #fff;
+		text-align: left;
+		top: 0;
+		transform: translateY(0%);
+		background-color: #000;
+	}
+	.slider_cnt {
+		width: 100%;
+		padding: 20px 20px 60px;
+	}
+	.carousel-control-next,
+	.carousel-control-prev {
+		top: 33%;
+	}
+}
