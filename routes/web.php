@@ -171,3 +171,9 @@ Route::get('/clear-cache', function() {
 
     return '<h1>Cache facade value cleared</h1>';
 });
+Route::get('/link', function() {
+     Artisan::call('storage:link');
+    
+ 
+     return '<h1>linked</h1>';
+ });
