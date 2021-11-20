@@ -3,7 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Models\Post;
+use App\Models\Hyperzone;
 use App\Models\Comment;
 use App\Models\CommentLike;
 use App\Models\LikeContentType;
@@ -48,12 +48,12 @@ class SinglePost extends Component
            // dd($id);
             if(!LikeContentType::where(['user_id'=>auth()->id(),'content_id'=>$id,'content_type'=>'Post'])->exists())
             {
-             Post::where('id',$id)->increment('like_count',1);
+                Hyperzone::where('id',$id)->increment('like_count',1);
              LikeContentType::create(['user_id'=>auth()->id(),'content_id'=>$id,'content_type'=>'Post']);
             }
             else
             {
-                Post::where('id',$id)->decrement('like_count',1);
+                Hyperzone::where('id',$id)->decrement('like_count',1);
                 LikeContentType::where(['user_id'=>auth()->id(),'content_id'=>$id,'content_type'=>'Post'])->delete();
  
             }

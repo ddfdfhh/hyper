@@ -87,41 +87,5 @@
    </div>
    @endforeach
    @endif
-   <script type="text/javascript">
-      let inp=document.querySelector('#inp')
-      let te=document.querySelector('#te')
-      inp.onchange = evt => {
-         te.style.zIndex='-1!important'
-      
-        const [file] = inp.files
-        if (file) {
-          blah.src = URL.createObjectURL(file)
-          blah.style.visibility ='visible'
-          
-        }
-      }
-      let inp1=document.querySelector('#video_inp')
-      let vid=document.querySelector('#video')
-      let te1=document.querySelector('#te1')
-      inp1.onchange = evt => {
-        
-         document.querySelector('#te1').style.zIndex='-1!important'
-         document.querySelector('#te1').style.visibility='hidden!important'
-        const [file] = inp1.files
-        if (file) {
-          vid.src = URL.createObjectURL(file)
-          vid.style.visibility ='visible'
-          
-        }
-      }
-window.addEventListener('hide-modal', event => {
- 
-    $('#img').hide();
-    $('#vid').hide();
   
-   
-   
-});
-
-   </script>
 </div>

@@ -47,17 +47,17 @@
                                @php
                                    $is_img=false;
                                    $is_vid=false;
-                                     if($post->featured_image && file_exists(storage_path('app/public/post/images/'.$post->featured_image)))
+                                     if($post->image1 && file_exists(storage_path('app/public/hyperzone/images/'.$post->image1)))
                                       $is_img=true;
-                                     if($post->video && file_exists(storage_path('app/public/post/videos/'.$post->video)))
+                                     if($post->video && file_exists(storage_path('app/public/hyperzone/videos/'.$post->video)))
                                        $is_vid=true;
                                   @endphp
                                    @if($is_img)
-                                      <img src="{{asset('storage/post/images/'.$post->featured_image)}}" style="width:100%;">
+                                      <img src="{{asset('storage/hyperzone/images/'.$post->image1)}}" style="width:100%;">
                                   @endif
                                   @if($is_vid)
                                   <video width="100%" height="100%" controls>
-                                     <source src="{{asset('storage/post/videos/'.$post->video)}}" type="video/mp4">
+                                     <source src="{{asset('storage/hyperzone/videos/'.$post->video)}}" type="video/mp4">
                                   </video>
                                      @endif
                                </div>
@@ -80,7 +80,7 @@
                                   <div x-show="share_open" @click.away="share_open=false" style="display:none;border: 1px solid grey;
                                        position:absolute;top:-73px;padding: 5px;
                                        z-index: 999;background:#7c5e64">
-                                     <x-share  :img="asset('storage/post/images/'.$post->featured_image)" :url="\URL::to('/post/'.$post->id)" :title="substr($post->details,0,20)" :details="$post->details"/>
+                                     <x-share  :img="asset('storage/hyperzone/images/'.$post->image1)" :url="\URL::to('/post/'.$post->id)" :title="substr($post->details,0,20)" :details="$post->details"/>
                                     </div>                                             
                            </div>
                          
