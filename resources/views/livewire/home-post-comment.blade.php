@@ -1,26 +1,6 @@
 <div class="bg_box_fixed">
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6171887138f8310012c86788&product=inline-share-buttons" async="async"></script>
-    
- 
-   <!-- <div class="xf_inside">
-     
-      <div class="box_text padd-sec">
-         <div class="form_sec_post">
-            <div class="input_post">
-               <img src="{{user_pic(auth()->id())}}" alt="Profile pic">
-               <input id="f" wire:model.defer="post_content" name="content" wire:keydown.enter="postContent" type="text" placeholder="Your thoughts here...">
-               <a href="javascript:void(0)"  wire:click="postContent" class="follow_btn">POST</a>
-            </div>
-            <ul class="xf_list_dashboard">
-               <li><a href="javascript:void(0)"  data-bs-toggle="modal" data-bs-target="#img"><img src="{{ asset('assets/frontend/images/svg') }}/img_upload.svg"></a></li>
-               <li><a href="javascript:void(0)"  data-bs-toggle="modal" data-bs-target="#vid"><img src="{{ asset('assets/frontend/images/svg') }}/play.svg"></a></li>
-               <li><a href="#" id="d"><img src="{{ asset('assets/frontend/images/svg') }}/emoji.svg"></a></li>
-            </ul>
-            @include('livewire.post_modals.upload_image')
-           @include('livewire.post_modals.upload_video')
-         </div>
-      </div>
-   </div> -->
+   
    @if($list)
    @foreach($list as $r)
    <div class="xf_inside mt-3">
