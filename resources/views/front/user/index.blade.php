@@ -104,7 +104,7 @@
                                     <div class="col-md-12 mt-3">
                                        <div class="tab-content" id="myTab-nContent">
                                           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                         
+                                         dfd
                                                        @if($my_posts)
                                                        @foreach($my_posts as $r)
                                                        <div class="xf_inside mt-3">
