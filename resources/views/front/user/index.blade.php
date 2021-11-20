@@ -80,7 +80,22 @@
                            </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
-                        
+                           <div class="tab+-pane fade show active" id="all" role="tabpanel" aria-labelledby="FOLLOWING-tab">
+                              <div class="profile_home mt-3">
+                                 <div class="row">
+                                   
+                                    <div class="col-md-12 mt-3">
+                                       <div class="tab-content" id="myTab-nContent">
+                                          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                         
+                                                      @livewire('post-comment-livewire')
+                                                   
+                                          </div>
+                                           </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
                              <!---My posts --->
                            <div class="tab-pane fade show" id="my" role="tabpanel" aria-labelledby="FOLLOWING-tab">
                               <div class="profile_home mt-3">
