@@ -23,17 +23,17 @@
                            @php
                                $is_img=false;
                                $is_vid=false;
-                                 if($r->featured_image && file_exists(storage_path('app/public/post/images/'.$r->featured_image)))
+                                 if($r->image1 && file_exists(storage_path('app/public/hyperzone/images/'.$r->image1)))
                                   $is_img=true;
-                                 if($r->video && file_exists(storage_path('app/public/post/videos/'.$r->video)))
+                                 if($r->video && file_exists(storage_path('app/public/hyperzone/videos/'.$r->video)))
                                    $is_vid=true;
                               @endphp
                                @if($is_img)
-                                  <img src="{{asset('storage/post/images/'.$r->featured_image)}}" style="width:100%;">
+                                  <img src="{{asset('storage/hyperzone/images/'.$r->image1)}}" style="width:100%;">
                               @endif
                               @if($is_vid)
                               <video width="100%" height="100%" controls>
-                                 <source src="{{asset('storage/post/videos/'.$r->video)}}" type="video/mp4">
+                                 <source src="{{asset('storage/hyperzone/videos/'.$r->video)}}" type="video/mp4">
                               </video>
                                  @endif
                            </div>
@@ -63,7 +63,7 @@
             <div x-show="share_open" @click.away="share_open=false" style="display:none;border: 1px solid grey;
                position:absolute;top:-73px;padding: 5px;
                z-index: 999;background:#7c5e64">
-                <x-share  :img="asset('storage/post/images/'.$r->featured_image)" :url="\URL::to('/post/'.$r->id)" :title="substr($r->details,0,20)" :details="$r->details"/>
+                <x-share  :img="asset('storage/hyperzone/images/'.$r->image1)" :url="\URL::to('/post/'.$r->id)" :title="substr($r->details,0,20)" :details="$r->details"/>
                                  
             </div>
          </div>
